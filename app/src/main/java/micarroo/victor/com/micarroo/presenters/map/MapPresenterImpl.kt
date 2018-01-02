@@ -18,14 +18,6 @@ class MapPresenterImpl(context: Context): MapPresenter, MapInteractor.RequestLis
         this.mapView = mapView
     }
 
-//    override fun requestAddressListByTypedKey(typedKey: String) {
-//        mapInteractor.requestAddressListByTypedKey(typedKey, this)
-//    }
-
-//    override fun requestAddressByCoordinates(latitude: Long, longitude: Long) {
-//        mapInteractor.requestAddressByCoordinates(latitude, longitude, this)
-//    }
-
     override fun onDestroy() {
         mapInteractor.disposeRequest()
         mapView = null

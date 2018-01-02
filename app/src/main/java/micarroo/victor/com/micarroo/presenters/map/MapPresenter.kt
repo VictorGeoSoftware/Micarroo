@@ -6,7 +6,5 @@ package micarroo.victor.com.micarroo.presenters.map
  */
 interface MapPresenter {
     fun setView(mapView:MapView)
-//    fun requestAddressListByTypedKey(typedKey: String)
-//    fun requestAddressByCoordinates(latitude: Long, longitude: Long)
     fun onDestroy()
 }
